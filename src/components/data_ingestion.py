@@ -1,5 +1,7 @@
 import os
 import sys
+from pathlib import Path
+sys.path.append(str(Path('src').parent.parent))
 from src.exception import CustomException
 from src.logger import logging
 import pandas as pd
@@ -38,4 +40,5 @@ class DataIngestion:
 
 if __name__=="__main__":
     obj=DataIngestion()
-    train_data,test_data=obj.initiate_data_ingestion()
+    obj.initiate_data_ingestion()
+    #train_data,test_data=obj.initiate_data_ingestion()
