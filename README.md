@@ -1,1 +1,2 @@
-## End to end ml project
+## End to end Student Math Note Prediction ml project
+Using Flask and Deployment on Azure.
